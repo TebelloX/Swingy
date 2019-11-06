@@ -23,6 +23,9 @@ public class Swingy
           System.out.println("Command line things");
           Console myConsole = new Console();
           System.out.println(myConsole.hero);
+          DisneyHero myHero = new DisneyHero("Tebello");
+          // myHero.hitpointLevel = 10;
+          System.out.println(myHero.hitpointLevel);
           // break;
         } else if (args[0].equals("gui")) {
             System.out.println("Enter the world of graphics");

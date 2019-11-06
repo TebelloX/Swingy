@@ -1,6 +1,6 @@
 package swingy;
 
-interface heroDefaults {
+interface HeroDefaults {
     
     public int level = 0;
     public int experience = 0;
@@ -8,49 +8,53 @@ interface heroDefaults {
     public int defense = 0;
     public int hitPoints = 0;
     
-    void increaseAttack(int a); 
-    void increaseDefense(int a); 
-    void increaseHitpoints(int a); 
+    void increaseAttack(int amount); 
+    void increaseDefense(int amount); 
+    void increaseHitpoint(int amount); 
 }
 
-class disneyHero implements heroDefaults {
+class DisneyHero implements heroDefaults {
 
     int hitpointLevel;
     int defenseStrength;
     int attackStrength;
     String heroName;
 
-    public disneyHero(String name) {
+    public DisneyHero(String name) {
         heroName = name;
+        System.out.println(heroName);
     }
 
     @Override
-    public void increaseAttack(int newAttack) { 
-          
+    public void increaseAttack() { 
+        
+        int newAttack = 20;
         attackStrength = newAttack;
     }
 
     @Override
-    public void increaseDefense(int newDefense) { 
-          
+    public void increaseDefense() { 
+        
+        int newDefense = 30;
         defenseStrength = newDefense;
     }
 
     @Override
-    public void increaseHitpoints(int newHP) { 
-          
+    public void increaseHitpoint() { 
+        
+        int newHP = 40;
         hitpointLevel = newHP;
     }
 }
 
-class realHero implements heroDefaults {
+class RealHero implements heroDefaults {
 
     int hitpointLevel;
     int defenseStrength;
     int attackStrength;
     String heroName;
 
-    public realHero(String name) {
+    public RealHero(String name) {
         
         heroName = name;
     }
@@ -68,20 +72,20 @@ class realHero implements heroDefaults {
     }
 
     @Override
-    public void increaseHitpoints(int newHP) {
+    public void increaseHitpoint(int newHP) {
 
         hitpointLevel = newHP;
     }
 }
 
-class supernaturalHero implements heroDefaults {
+class SupernaturalHero implements heroDefaults {
 
     int hitpointLevel;
     int defenseStrength;
     int attackStrength;
     String heroName;
 
-    public supernaturalHero(String name) {
+    public SupernaturalHero(String name) {
         
         heroName = name;
     }
@@ -99,7 +103,7 @@ class supernaturalHero implements heroDefaults {
     }
 
     @Override
-    public void increaseHitpoints(int newHP) {
+    public void increaseHitpoint(int newHP) {
 
         hitpointLevel = newHP;
     }
