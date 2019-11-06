@@ -22,10 +22,12 @@ public class Swingy
         if (args[0].equals("console")) {
           System.out.println("Command line things");
           Console myConsole = new Console();
-          
+          System.out.println(myConsole.hero);
           // break;
         } else if (args[0].equals("gui")) {
             System.out.println("Enter the world of graphics");
+            Gui myGui = new Gui();
+            System.out.println(myGui.hero);
             // break;
         }
       } catch (ArrayIndexOutOfBoundsException e) {
