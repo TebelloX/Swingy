@@ -1,10 +1,18 @@
 package swingy;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Swingy
 {
   public static void main (String[]args)
   {
+
+    ArrayList<String> weapons = new ArrayList<>();
+
+    weapons.add("sword");
+    weapons.add("gun");
+    weapons.add("blow-torch");
+    weapons.add("whip");
 
     //String option = args[0].toString();
     //System.out.println("xxx");

@@ -1,16 +1,16 @@
 package swingy;
 
 interface HeroDefaults {
-    
+
     public int level = 0;
     public int experience = 0;
     public int attack = 0;
     public int defense = 0;
     public int hitPoints = 0;
-    
-    void increaseAttack(int amount); 
-    void increaseDefense(int amount); 
-    void increaseHitpoint(int amount); 
+
+    void increaseAttack(int amount);
+    void increaseDefense(int amount);
+    void increaseHitpoint(int amount);
 }
 
 class DisneyHero implements heroDefaults {
@@ -26,22 +26,22 @@ class DisneyHero implements heroDefaults {
     }
 
     @Override
-    public void increaseAttack() { 
-        
+    public void increaseAttack() {
+
         int newAttack = 20;
         attackStrength = newAttack;
     }
 
     @Override
-    public void increaseDefense() { 
-        
+    public void increaseDefense() {
+
         int newDefense = 30;
         defenseStrength = newDefense;
     }
 
     @Override
-    public void increaseHitpoint() { 
-        
+    public void increaseHitpoint() {
+
         int newHP = 40;
         hitpointLevel = newHP;
     }
@@ -55,7 +55,7 @@ class RealHero implements heroDefaults {
     String heroName;
 
     public RealHero(String name) {
-        
+
         heroName = name;
     }
 
@@ -86,7 +86,7 @@ class SupernaturalHero implements heroDefaults {
     String heroName;
 
     public SupernaturalHero(String name) {
-        
+
         heroName = name;
     }
 
