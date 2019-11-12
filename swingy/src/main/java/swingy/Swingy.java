@@ -7,7 +7,7 @@ public class Swingy
   public static void main (String[]args)
   {
 
-    ArrayList<String> weapons = new ArrayList<>();
+    ArrayList<String> weapons = new ArrayList<String>();
 
     weapons.add("sword");
     weapons.add("gun");

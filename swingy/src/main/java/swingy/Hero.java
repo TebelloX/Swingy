@@ -13,7 +13,7 @@ interface HeroDefaults {
     void increaseHitpoint(int amount);
 }
 
-class DisneyHero implements heroDefaults {
+class DisneyHero implements HeroDefaults {
 
     int hitpointLevel;
     int defenseStrength;
@@ -26,9 +26,8 @@ class DisneyHero implements heroDefaults {
     }
 
     @Override
-    public void increaseAttack() {
+    public void increaseAttack(int newAttack) {
 
-        int newAttack = 20;
         attackStrength = newAttack;
     }
 
@@ -54,10 +53,10 @@ class RealHero implements heroDefaults {
     int attackStrength;
     String heroName;
 
-    public RealHero(String name) {
+    // public RealHero(String name) {
 
-        heroName = name;
-    }
+    //     heroName = name;
+    // }
 
     @Override
     public void increaseAttack(int newAttack) {
