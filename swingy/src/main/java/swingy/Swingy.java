@@ -33,7 +33,7 @@ public class Swingy
           System.out.println(myConsole.hero);
           DisneyHero myHero = new DisneyHero("Tebello");
           // myHero.hitpointLevel = 10;
-          System.out.println(myHero.hitpointLevel);
+          System.out.println(myHero.hitPointLevel);
           // break;
         } else if (args[0].equals("gui")) {
             System.out.println("Enter the world of graphics");
